@@ -1,0 +1,128 @@
+.form{
+    width: 90%;
+    max-width: 450px;
+    height: 360px;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    transform: translate(-50, -50);
+    background: white;
+    padding: 40px 10px 70px;
+    text-align: center;
+    border-radius: 20px;
+   
+}
+
+.form h1{
+    color: black;
+    margin-bottom: 80px;
+    margin-top: -20px;
+    position: relative;
+    font-size: 25px;
+}
+
+.form h1::after{
+    content: '';
+    width: 40px;
+    height: 4px;
+    border-radius: 5px;
+    background: rgb(185, 146, 16);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50px);
+    transition: 0.5s;
+    
+
+
+}
+
+.form h1:hover::after{
+    width: 100px;
+
+}
+
+
+.inputF{
+    background: rgb(223, 219, 219);
+    margin: 15px 30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 12px 10px;
+
+}
+
+input::placeholder{
+    color: rgb(110, 107, 107);
+}
+
+.inputF i{
+    color: rgb(110, 107, 107);
+    margin-left: 15px;
+
+
+}
+
+form p{
+    text-align:center;
+    font-size: 13px;
+    margin-left: 8px;
+    line-height: 20px;
+}
+
+form p a{
+    text-decoration: none;
+    color:rgb(185, 146, 16) ;
+}
+
+a:hover{
+    color: blue;
+}
+
+#remember{
+    position: absolute;
+    left: -150px;
+    top: 208px;
+}
+
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn button{
+    font-size: 17px;
+    padding-right: 60px;
+    padding-left: 60px;
+    background: rgb(185, 146, 16);
+    color: rgb(255, 255, 255);
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+    margin-top: 10px;
+
+}
+
+.inputG{
+    /*margin-bottom: 20px;*/
+    height: 250px;
+    margin-top: -30px;
+    
+}
+

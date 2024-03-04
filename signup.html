@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="signup.css">
+    <script src="https://kit.fontawesome.com/59c5a9a164.js" crossorigin="anonymous"></script>
+    
+
+
+</head>
+
+<body>
+    <div>
+        <nav class="header">
+            <div class="navbar">
+                <img src="logo.png" class="logo" width="120" height="100">
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="" >About Us</a></li>
+                    <li><a href="" >My Works</a></li>
+                    <li><a href="signin.html">Sign in</a></li>
+                    <li><a href="signup.html">Sign up</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    
+
+    <div class="container">
+        <div class="formU">
+            <h1 id="title">Sign Up</h1>
+            <form>
+                <div class="inputG">
+                    <div class="inputF">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" id="name" placeholder="Name" required>
+                    </div>
+
+                    <div class="gender">
+                        <label id="sex">Sex:</label>
+                        <label id="male">Male</label>
+                        <input type="radio" name="sex" id="radio">
+                        <label id="female">Female</label>
+                        <input type="radio" name="sex" id="fradio">
+                    </div>
+
+                    <div class="inputF">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <input type="date" id="dob" placeholder="DOB" required>
+                    </div>
+
+                    <div class="inputF">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+
+                    <div class="inputF">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="password" placeholder="Password" required>
+                    </div>
+                        <input type="checkbox" id="CTS">
+                    <p id="Ts">I agree to all <span class="red">Terms and Conditions</span> and <span class="red">Privacy Statements</span></p>
+
+                    <div class="btn">
+                        <button type="button" id="signupbtn">Sign Up</button>
+                    </div>
+
+                    <p>Already have an account?<a href="signin.html"> Sign In</a></p>
+
+                </div>
+
+               
+
+            </form>
+
+        </div>
+    </div>
+
+
+    <script src="web.js"></script>
+    
+</body>
+</html>

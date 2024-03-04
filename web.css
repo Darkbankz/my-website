@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', Times New Roman, Times, serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 150vh;
+    background-image: linear-gradient(rgba(29, 24, 24, 0.918),rgba(20, 17, 17, 0.75)),
+    url(BG.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.navbar{
+    padding: 10px 0px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 50px;
+    border: 2px solid gray;
+    z-index: 100;
+}
+
+.logo{
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    padding: 20px ;
+    
+
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+    
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(201, 150, 23);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    color: #fff;
+    transform: translateY(-50);
+}
+
+.content h1{
+    font-size: 40px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.content p{
+    margin: 40px 20px;
+    font-weight: 100;
+    line-height: 23px;
+    font-size: 17px;
+}
+
+.blink {
+    animation: blinker 1.5s linear infinite;
+    color: rgb(185, 146, 16);
+    
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
